@@ -4,8 +4,11 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
-import projectPic from "../../public/images/projects/Blank.jpg"
+import projectPic from "../../public/images/projects/test.jpg"
 import Image from 'next/image'
+import {motion} from "framer-motion"
+
+const FramerImage = motion(Image);
 
 const Project = ({title, img,summary ,link, github}) => {
     return(
@@ -15,7 +18,8 @@ const Project = ({title, img,summary ,link, github}) => {
             <Link href={link} target="_blank"
             className='w-full cursor-pointer overflow-hidden rounded-lg'
             >
-                <Image src={img} alt={title} className='w-full h-auto object-cover' />
+                <FramerImage src={img} alt={title} className='w-full h-auto object-cover' 
+                whileHover={{scale:1.05}} transition={{duration:0.2}}/>
             </Link>
 
             <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -44,53 +48,53 @@ const projects = () => {
         </Head>
         <main className='w-full mb-16 flex flex-col items-center justify-center'>
             <Layout className='pt-16'>
-                <AnimatedText text='My Projects'
+                <AnimatedText text='Ideas Formed, Wonders Created'
                 className='mb-16'
                 />
 
                 <div className='grid grid-cols-12 gap-24'>
                     <div className='col-span-6'>
                         <Project
-                        title='AAA'
+                        title='The First Project'
                         img={projectPic}
                         summary='a good weather'
-                        link="/"
+                        link="/projects/the first project"
                         github="/"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                        title='AAA'
+                        title='The Second Project'
                         img={projectPic}
                         summary='a good weather'
-                        link="/"
+                        link="/projects/the second project"
                         github="/"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                        title='AAA'
+                        title='The Third Project'
                         img={projectPic}
                         summary='a good weather'
-                        link="/"
+                        link="/projects/the third project"
                         github="/"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                        title='AAA'
+                        title='The Forth Project'
                         img={projectPic}
                         summary='a good weather'
-                        link="/"
+                        link="/projects/the forth project"
                         github="/"
                         />
                     </div>
                     <div className='col-span-6'>
                         <Project
-                        title='AAA'
+                        title='The Fifth Project'
                         img={projectPic}
                         summary='a good weather'
-                        link="/"
+                        link="/projects/the fifth project"
                         github="/"
                         />
                     </div>

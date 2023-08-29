@@ -38,8 +38,8 @@ const about = () => {
             <meta name='description' content='ant description' />
         </Head>
       <main className='flex w-full flex col items-center justify-center'>
-        <Layout className='pt-16'>
-        <AnimatedText text='A slogan here' className='mb-16'/>
+        <Layout className='pt-12'>
+        <AnimatedText text='Crafting Careers, Living Dreams' className='mb-16'/>
         <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-span-3 flex flex-col items-start justify-start'>
                 <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
