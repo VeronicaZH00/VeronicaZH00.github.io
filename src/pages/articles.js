@@ -47,9 +47,9 @@ const Article = ({img, title, date, link}) => {
         viewport={{once:true}}
         className='relative w-full p-4 py-6 my-4 rounded-xl flex items-center
         justify-between bg-light text-dark first:mt-0 border border-solid border-dark
-        border-r-4 border-b-4'>
+        border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light sm:flex-col'>
             <MovingImg title={title} img={img} link={link} />
-            <span className='text-primary pl-4'>{date}</span>
+            <span className='text-primary pl-4 sm:self-start sm:pl-0 xs:text-sm'>{date}</span>
         </motion.li>
     )
 }
@@ -61,36 +61,36 @@ const articles = () => {
             <title>Veronica Chang | Articles Page</title>
             <meta name='description' content='ant description' />
         </Head>
-        <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden'>
+        <main className='w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light'>
             <Layout className='pt-16'>
-                <AnimatedText text='Unveiling Thoughts, Sharing Stories' className='mb-16' />
-                <ul>
+                <AnimatedText text='Unveiling Thoughts, Sharing Stories' className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl' />
+                <ul className='lg:gap-8 md:grid-cols-1 md:gap-y-16'>
                     <Article 
-                        title="Hello World!"
+                        title="Quantum Computing Algorithms for Optimization Problems: Bridging the Gap Between Theory and Practical Implementations"
                         date="Augest 28, 2023"
                         img={ArticlePic}
                         link="/"
                      />
                      <Article 
-                        title="Hello World!"
+                        title="Advancing AI Ethics: Ethical Considerations and Guidelines in Autonomous Systems Development"
                         date="Augest 28, 2023"
                         img={ArticlePic}
                         link="/"
                      />
                      <Article 
-                        title="Hello World!"
+                        title="Emerging Trends in Renewable Energy Storage Technologies: A Comparative Analysis"
                         date="Augest 28, 2023"
                         img={ArticlePic}
                         link="/"
                      />
                      <Article 
-                        title="Hello World!"
+                        title="Unraveling the Complexity of Protein Folding: Molecular Dynamics Simulations and Computational Approaches"
                         date="Augest 28, 2023"
                         img={ArticlePic}
                         link="/"
                      />
                      <Article 
-                        title="Hello World!"
+                        title="Enhancing Cybersecurity through Machine Learning: A Study on Intrusion Detection Systems"
                         date="Augest 28, 2023"
                         img={ArticlePic}
                         link="/"
