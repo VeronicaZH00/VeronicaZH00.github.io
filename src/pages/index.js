@@ -20,7 +20,7 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className='flex Items-center justify-between w-full lg:flex-col'>
-            <div className='w-1/2 flex justify-c enter items-center md:w-full'>
+            <div className='w-1/2 flex justify-center items-center md:w-full'>
               <Image src={profilePic} alt="Veronica" className='w-[480px] h-auto object-contain lg:hidden md:inline-block md:w-full md:-translate-y-4'
               priority sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw' />
             </div>
